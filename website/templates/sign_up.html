@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block title %}Sign Up {% endblock %} {% block
+content %}
+<form method="POST">
+  <h3 align="center">Sign Up</h3>
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      placeholder="Enter email"
+    />
+  </div>
+  
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="rack1" name="rack1" value="1">
+    <label class="form-check-label" for="rack1">Rack 1</label>
+  </div>
+
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="rack2" name="rack2" value="1">
+    <label class="form-check-label" for="rack2">Rack 2</label>
+  </div>
+
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="rack3" name="rack3" value="1">
+    <label class="form-check-label" for="rack3">Rack 3</label>
+  </div>
+
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="rack4" name="rack4" value="1">
+    <label class="form-check-label" for="rack4">Rack 4</label>
+  </div>
+
+  <br />
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
